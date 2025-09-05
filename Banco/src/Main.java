@@ -13,7 +13,7 @@ public class Main {
             opcion = sc.nextInt();
                 switch (opcion) {
                     case 1:
-                        System.out.println("El usuario:"+ cuenta1.getNombre() + "   Tiene un saldo actual: $" + cuenta1.consultar());
+                        System.out.println("Hola :"+ cuenta1.getNombre() + "   Tienes un saldo actual: $" + cuenta1.consultar());
                         break;
                     case 2:
                         System.out.print("Cantidad a depositar: ");
