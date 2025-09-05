@@ -11,19 +11,24 @@ public class Main {
             System.out.println("4. Salir");
             opcion = sc.nextInt();
                 switch (opcion) {
-                    case 1 -> System.out.println("Saldo actual: $" + cuenta1.consultar());
-                    case 2 -> {
+                    case 1:
+                        System.out.println("Saldo actual: $" + cuenta1.consultar());
+                        break;
+                    case 2:
                         System.out.print("Cantidad a depositar: ");
                         double deposito = sc.nextDouble();
                         cuenta1.depositar(deposito);
-                    }
-                    case 3 -> {
+                    break;
+                    case 3:
                         System.out.print("Cantidad a retirar: ");
                         double retiro = sc.nextDouble();
                         cuenta1.retirar(retiro);
-                    }
-                    case 4 -> System.out.println("Gracias por usar el banco :)");
-                    default -> System.out.println("Opción inválida.");
+                    break;
+                    case 4:
+                        System.out.println("Gracias por usar el banco :)");
+                        break;
+                    default:
+                        System.out.println("Opción inválida.");
             }
         } while (opcion != 4);
 
