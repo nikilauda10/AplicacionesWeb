@@ -1,0 +1,53 @@
+h1{
+    color: brown;
+}
+.box{
+    margin: 30px;
+    padding: 5px;
+    border: 3px solid red;
+    background-color: lightblue;
+}
+
+.box-2{
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    /*Por defecto*/
+    position: static;
+}
+
+/*con el relative y alo puedo mover como yo quiera*/
+.box-3{
+    width: 100px;
+    height: 100px;
+    background-color: peru;
+    position: relative;
+
+    left: 110px;
+    bottom: 100px;
+}
+
+.container{
+    width: 300px;
+    height: 200px;
+    background-color: greenyellow;
+    position: relative;
+}
+/* con absolute no se sale de el relative */
+.box-4{
+    width: 100px;
+    height: 100px;
+    background-color: tomato;
+    position: absolute;
+    bottom: 50px;
+    right: 100px;
+}
+/*Con fixeed es para que no importa si muevo la pagina este no se mueve como si fuera un anuncio*/
+.box-5{
+    width: auto;
+    height: 100px;
+    background-color: rosybrown;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
